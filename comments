@@ -1,0 +1,61 @@
+use expressjs.com to install webserver
+
+
+handlebars is used by express for injecting templates
+to install it use npm install hbs --save
+hbs is mustache syntax {{}}
+
+Whenever you use res.render,
+Handlebars will look for the "views" folder and use the corresponding template you specified and render that.
+The public folder typically houses all the assets you want to make accessible to the client (e.g. images).
+
+C:\BS-Files\nodejs\Node-WebServer>nodemon server.js -e js,hbs to listen the changes when any hbs is included
+
+
+app.use((req, res, next) =>{
+  var now= new Date().toString();
+  console.log(`${now}: ${req.method} ${req.url}`);
+  next();//this function will hit only when any url request is sent
+});
+the above will help us to print the url
+Wed Aug 08 2018 14:06:09 GMT+0530 (India Standard Time): GET /
+Wed Aug 08 2018 14:06:18 GMT+0530 (India Standard Time): GET /about
+Wed Aug 08 2018 14:06:19 GMT+0530 (India Standard Time): GET /
+
+to install git in local use git-scm.com
+to install git use command git init
+to check version git --version
+to get status git status
+to add git add filename and you can see the status by executing git status
+git commit -m "Initial commit" for commit
+
+ssh key need to add to easily communicate between two computers
+
+For adding new ssh keys https://help.github.com/articles/connecting-to-github-with-ssh/
+
+
+
+Deployment:
+
+Go to heroku.com
+then login
+For using heroku we need to install toolbelt.heroku.com
+once installation done
+go to below path to install cli
+C:\BS-Files\nodejs\Node-WebServer>heroku --help
+heroku login for login into heroku
+heroke keys:add will show the rsa keys
+
+C:\BS-Files\nodejs\Node-WebServer>heroku keys:add
+WARNING: This is the legacy Heroku CLI with limited functionality. Please install the latest CLI.
+WARNING: Installation instructions are at https://cli.heroku.com
+Heroku CLI submits usage information back to Heroku. If you would like to disable this, set `skip_analytics: true` in C:\Users\Venkatesh\AppData\Local/heroku/config.json
+ !    heroku-cli: update available from 6.15.5-1f03166 to 6.99.0-ec9edad
+ !    heroku-cli: update available from 6.15.5-1f03166 to 6.99.0-ec9edad
+Found an SSH public key at C:\Users\Venkatesh\.ssh\id_rsa.pub
+
+to list the keys use heroku keys command
+to test the connection ssh -v git@heroku.com (use gitbash)
+
+
+"start": "node server.js" add it in package.json to use start command like npm start
