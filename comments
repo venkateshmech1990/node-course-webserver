@@ -30,7 +30,7 @@ to add git add filename and you can see the status by executing git status
 git commit -m "Initial commit" for commit
 git push -u origin master
 ssh key need to add to easily communicate between two computers
-
+ssh -T git@github.com for making connection
 For adding new ssh keys https://help.github.com/articles/connecting-to-github-with-ssh/
 
 
