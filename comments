@@ -60,3 +60,8 @@ to test the connection ssh -v git@heroku.com (use gitbash)
 
 
 "start": "node server.js" add it in package.json to use start command like npm start
+
+after commiting in git use heroku create for creating git in heroke
+once done use git push heroku
+to know the url use heroku open to open the url in default browser
+to check in browser https://dashboard.heroku.com/apps/peaceful-bayou-17381
