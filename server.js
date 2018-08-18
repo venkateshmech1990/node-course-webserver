@@ -51,7 +51,7 @@ app.get('/about',(request, response) =>{
   })
 });
 
-app.get('/projects',(request, response) =>{
+app.get('/project',(request, response) =>{
   //response.render('about.hbs');//to send value to html
   response.render('project.hbs',{
     pageTitle:'Project Page html'
